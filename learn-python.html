@@ -51,7 +51,7 @@
         <div style="background-color: rgba(255, 255, 255, 0.05); padding: 30px; border-radius: 8px; margin: 30px 0;">
           <h2>6 Core Concepts in Python</h2>
           <p>Master these fundamental concepts to become proficient in Python:</p>
-          <img src="python-concepts.png" alt="Python 6 Core Concepts: Variables, Loops, Strings, Functions, Lists, String Manipulation" style="width: 100%; max-width: 800px; margin: 20px 0; border-radius: 8px;">
+          <img src="https://raw.githubusercontent.com/idthirty9-hue/compiler.github.io/main/IMG-20260614-WA0005.jpg" alt="Python 6 Core Concepts: Variables, Loops, Strings, Functions, Lists, String Manipulation" style="width: 100%; max-width: 800px; margin: 20px 0; border-radius: 8px;">
           <p style="font-size: 14px; color: rgba(255,255,255,0.7);">Learn the 6 core concepts: Variable, Loop, Strings, Function, List, String all Separate</p>
         </div>
 
@@ -158,36 +158,6 @@
           <p>
             When you run this code, you'll see "Hello, World!" appear in the output. Congratulations! You've written your first Python program. This simple achievement represents crossing an important threshold—you're now a programmer. Every expert started exactly here.
           </p>
-          <p>
-            Now, let's break down what happened:
-          </p>
-          <ul>
-            <li><strong>print()</strong> is a built-in function. Functions are reusable blocks of code that perform specific tasks. Python includes many built-in functions ready to use.</li>
-            <li><strong>"Hello, World!"</strong> is a string. It's text surrounded by quotes. Python knows it should treat this as text, not as a command. You can use double quotes or single quotes—Python accepts both.</li>
-            <li><strong>Parentheses ()</strong> tell Python where the function's input begins and ends. Most functions need input (called arguments) to do their job.</li>
-          </ul>
-          <p>
-            Let's try a more interesting example. Instead of hardcoding a message, let's make it interactive:
-          </p>
-          <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 5px; margin: 15px 0; font-family: 'JetBrains Mono', monospace; overflow-x: auto;">
-            print("My name is Alex")<br>
-            print("I am learning Python")<br>
-            print("Programming is awesome!")
-          </div>
-          <p>
-            Each print() statement displays its own line of text. Run this and you'll see three separate lines of output. This shows an important principle: Python executes code line by line from top to bottom. It follows a sequence, just like following a recipe step by step.
-          </p>
-          <p>
-            You can also print without text to create blank lines:
-          </p>
-          <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 5px; margin: 15px 0; font-family: 'JetBrains Mono', monospace; overflow-x: auto;">
-            print("Line 1")<br>
-            print()<br>
-            print("Line 2")
-          </div>
-          <p>
-            This creates a blank line between the two messages. Spacing makes output easier to read for humans.
-          </p>
         </section>
 
         <section id="variables">
@@ -204,64 +174,6 @@
             height = 5.6<br>
             is_student = True
           </div>
-          <p>
-            In Python, creating a variable is simple. You write the variable name, then an equals sign (=), then the value. Python figures out the data type automatically. The equals sign doesn't mean "equals" like in math. It means "store this value in this variable." Python is smart—it looks at the value and decides what type it is.
-          </p>
-          <p>
-            <strong>Data Types Explained</strong>
-          </p>
-          <p>
-            Python has several basic data types. Understanding these types is crucial because different types behave differently:
-          </p>
-          <p>
-            <strong>Strings (str):</strong> Text surrounded by quotes. Examples: "hello", "Python 123", or "!@#$%". Strings can contain letters, numbers, and special characters. You can use either double quotes or single quotes—Python treats them the same way. Strings are perfect for storing names, messages, and any text data.
-          </p>
-          <p>
-            <strong>Integers (int):</strong> Whole numbers without decimals. Examples: 42, -10, 0, 1000000. Use integers for counting or representing discrete values where fractional parts don't make sense. Integers can be positive, negative, or zero.
-          </p>
-          <p>
-            <strong>Floats (float):</strong> Numbers with decimals. Examples: 3.14, -2.5, 0.001. Use floats for measurements or calculations that need precision (like temperature, weight, or distance). Floats are more precise than integers but require a bit more memory.
-          </p>
-          <p>
-            <strong>Booleans (bool):</strong> Values that are either True or False. Nothing else. Booleans are useful for making decisions in your program. They answer yes/no questions: Is it raining? Is the user logged in? Is the file valid?
-          </p>
-          <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 5px; margin: 15px 0; font-family: 'JetBrains Mono', monospace; overflow-x: auto;">
-            message = "Welcome to Python"<br>
-            score = 95<br>
-            temperature = 98.6<br>
-            is_raining = False<br>
-            <br>
-            print(message)<br>
-            print(score)<br>
-            print(temperature)<br>
-            print(is_raining)
-          </div>
-          <p>
-            <strong>Understanding Variable Names</strong>
-          </p>
-          <p>
-            Variable names must follow certain rules. They must start with a letter or underscore, can contain letters, numbers, and underscores, and cannot contain spaces. Python is case-sensitive, so `Student_Name` and `student_name` are different variables.
-          </p>
-          <p>
-            Good variable names are descriptive. Use `user_age` instead of `x` or `a`. This makes your code easier to understand. When you return to code you wrote weeks ago, descriptive names save you from confusion. Your teammates also appreciate clear names because they spend less time figuring out what your code does.
-          </p>
-          <ul>
-            <li>✓ Good: `student_name`, `temperature_celsius`, `is_logged_in`, `account_balance`</li>
-            <li>✗ Poor: `n`, `t`, `x`, `s`</li>
-          </ul>
-          <p>
-            Python developers follow a naming convention called "snake_case"—use lowercase with underscores between words. This is more readable than CamelCase (used in other languages like JavaScript). Snake_case is the Python standard, and following standards makes your code professional and trustworthy.
-          </p>
-          <p>
-            <strong>Checking Variable Type</strong>
-          </p>
-          <p>
-            Python has a built-in function `type()` that tells you a variable's type:
-          </p>
-          <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 5px; margin: 15px 0; font-family: 'JetBrains Mono', monospace; overflow-x: auto;">
-            x = 42<br>
-            print(type(x))  # Prints: &lt;class 'int'&gt;
-          </div>
         </section>
 
         <section id="operations">
@@ -276,420 +188,100 @@
             <li><strong>+</strong> Addition: 5 + 3 equals 8</li>
             <li><strong>-</strong> Subtraction: 10 - 4 equals 6</li>
             <li><strong>*</strong> Multiplication: 6 * 7 equals 42</li>
-            <li><strong>/</strong> Division: 20 / 4 equals 5.0 (notice: returns a float even for whole result)</li>
-            <li><strong>//</strong> Floor Division: 20 // 3 equals 6 (removes decimal part, rounds down)</li>
-            <li><strong>%</strong> Modulo: 20 % 3 equals 2 (returns remainder after division)</li>
-            <li><strong>**</strong> Exponentiation: 2 ** 3 equals 8 (2 to the power of 3)</li>
+            <li><strong>/</strong> Division: 20 / 4 equals 5.0</li>
+            <li><strong>//</strong> Floor Division: 20 // 3 equals 6</li>
+            <li><strong>%</strong> Modulo: 20 % 3 equals 2</li>
+            <li><strong>**</strong> Exponentiation: 2 ** 3 equals 8</li>
           </ul>
-          <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 5px; margin: 15px 0; font-family: 'JetBrains Mono', monospace; overflow-x: auto;">
-            x = 10<br>
-            y = 3<br>
-            <br>
-            print(x + y)    # 13<br>
-            print(x - y)    # 7<br>
-            print(x * y)    # 30<br>
-            print(x / y)    # 3.333...<br>
-            print(x // y)   # 3<br>
-            print(x % y)    # 1<br>
-            print(x ** y)   # 1000
-          </div>
-          <p>
-            Notice the difference between / and //. Division (/) gives you exact results with decimals. Floor division (//) rounds down to the nearest whole number. The modulo (%) operator is often used to check if numbers are even or odd, or to cycle through values.
-          </p>
-          <p>
-            <strong>Order of Operations</strong>
-          </p>
-          <p>
-            Python follows standard mathematical order of operations (PEMDAS):
-          </p>
-          <ul>
-            <li>Parentheses</li>
-            <li>Exponentiation</li>
-            <li>Multiplication and Division (left to right)</li>
-            <li>Addition and Subtraction (left to right)</li>
-          </ul>
-          <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 5px; margin: 15px 0; font-family: 'JetBrains Mono', monospace; overflow-x: auto;">
-            result = 10 + 5 * 2<br>
-            print(result)  # 20, not 30 (multiplication happens first)
-          </div>
-          <p>
-            <strong>String Operations:</strong>
-          </p>
-          <p>
-            You can also use + with strings. It concatenates them (joins them together):
-          </p>
-          <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 5px; margin: 15px 0; font-family: 'JetBrains Mono', monospace; overflow-x: auto;">
-            first_name = "John"<br>
-            last_name = "Doe"<br>
-            full_name = first_name + " " + last_name<br>
-            print(full_name)  # John Doe
-          </div>
-          <p>
-            This prints "John Doe". Notice we added a space: " " so the names don't run together. String concatenation is powerful for building messages dynamically.
-          </p>
-          <p>
-            You can also multiply strings to repeat them:
-          </p>
-          <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 5px; margin: 15px 0; font-family: 'JetBrains Mono', monospace; overflow-x: auto;">
-            print("Ha" * 3)  # HaHaHa
-          </div>
-          <p>
-            This prints "HaHaHa". Useful for creating patterns or repeating output!
-          </p>
-          <p>
-            <strong>Variable Assignment Shortcuts</strong>
-          </p>
-          <p>
-            When you want to modify a variable by adding to it, Python offers shortcuts:
-          </p>
-          <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 5px; margin: 15px 0; font-family: 'JetBrains Mono', monospace; overflow-x: auto;">
-            x = 10<br>
-            x = x + 5     # Long way: x is now 15<br>
-            x += 5        # Short way: same result, x is now 20<br>
-            <br>
-            y = 20<br>
-            y -= 3        # Same as y = y - 3<br>
-            y *= 2        # Same as y = y * 2
-          </div>
         </section>
 
         <section id="input-output">
           <h2>Input and Output: Making Programs Interactive</h2>
           <p>
-            So far, we've printed output to the screen. Now let's learn how to accept input from users. This makes programs interactive instead of one-way.
-          </p>
-          <p>
-            <strong>The input() Function</strong>
+            The `input()` function pauses the program and waits for the user to type something. Whatever they type becomes the value of the variable. This makes programs interactive instead of one-way.
           </p>
           <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 5px; margin: 15px 0; font-family: 'JetBrains Mono', monospace; overflow-x: auto;">
             name = input("What is your name? ")<br>
             print("Hello, " + name)
           </div>
-          <p>
-            The `input()` function pauses the program and waits for the user to type something. Whatever they type becomes the value of the variable `name`. Then we print a greeting using that name. This is how programs become interactive and respond to user actions.
-          </p>
-          <p>
-            Important: `input()` always returns a string. So if you ask someone for their age:
-          </p>
-          <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 5px; margin: 15px 0; font-family: 'JetBrains Mono', monospace; overflow-x: auto;">
-            age = input("How old are you? ")<br>
-            print(age)<br>
-            print(type(age))  # Prints: &lt;class 'str'&gt;
-          </div>
-          <p>
-            The age will be stored as text "25", not the number 25. If you need to do math with it, you must convert it:
-          </p>
-          <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 5px; margin: 15px 0; font-family: 'JetBrains Mono', monospace; overflow-x: auto;">
-            age = int(input("How old are you? "))<br>
-            next_year_age = age + 1<br>
-            print("Next year you'll be " + str(next_year_age))
-          </div>
-          <p>
-            Here, `int()` converts the string to an integer. We do the math, then `str()` converts it back to a string for printing. This type conversion is necessary because different types have different capabilities.
-          </p>
-          <p>
-            <strong>Converting Between Types</strong>
-          </p>
-          <ul>
-            <li><strong>str()</strong> Converts to string: str(42) becomes "42"</li>
-            <li><strong>int()</strong> Converts to integer: int("42") becomes 42</li>
-            <li><strong>float()</strong> Converts to float: float("3.14") becomes 3.14</li>
-          </ul>
-          <p>
-            Be careful with conversions. Converting "abc" to int will cause an error because "abc" isn't a number.
-          </p>
         </section>
 
         <section id="decision-making">
           <h2>Decision Making with If Statements</h2>
           <p>
-            Programs make decisions based on conditions. "If it's raining, take an umbrella. Otherwise, don't." This is decision-making in the real world, and it's the same in Python. Without decision-making, programs would do the same thing every time. Conditions make programs smart.
-          </p>
-          <p>
-            <strong>The if Statement</strong>
+            Programs make decisions based on conditions. "If it's raining, take an umbrella. Otherwise, don't." This is decision-making in the real world, and it's the same in Python.
           </p>
           <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 5px; margin: 15px 0; font-family: 'JetBrains Mono', monospace; overflow-x: auto;">
             age = 18<br>
-            <br>
             if age >= 18:<br>
                 print("You are an adult")<br>
             else:<br>
                 print("You are a minor")
           </div>
-          <p>
-            Notice the structure: `if` followed by a condition, a colon, then indented code. The indentation is important—it tells Python which code belongs to the if block. This indentation pattern is a key feature of Python. Indentation isn't optional decoration; it's part of the language's syntax.
-          </p>
-          <p>
-            <strong>Comparison Operators</strong>
-          </p>
-          <ul>
-            <li><strong>==</strong> Equal to (note: two equals signs, different from assignment =)</li>
-            <li><strong>!=</strong> Not equal to</li>
-            <li><strong>&lt;</strong> Less than</li>
-            <li><strong>&gt;</strong> Greater than</li>
-            <li><strong>&lt;=</strong> Less than or equal to</li>
-            <li><strong>&gt;=</strong> Greater than or equal to</li>
-          </ul>
-          <p>
-            This distinction is crucial: = assigns a value, == compares two values. Confusing them is a common beginner mistake.
-          </p>
-          <p>
-            <strong>Multiple Conditions with elif</strong>
-          </p>
-          <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 5px; margin: 15px 0; font-family: 'JetBrains Mono', monospace; overflow-x: auto;">
-            score = 85<br>
-            <br>
-            if score >= 90:<br>
-                print("Grade: A")<br>
-            elif score >= 80:<br>
-                print("Grade: B")<br>
-            elif score >= 70:<br>
-                print("Grade: C")<br>
-            else:<br>
-                print("Grade: F")
-          </div>
-          <p>
-            `elif` (else if) lets you check multiple conditions. The program checks each one in order and executes the first block that matches. Once a condition matches, it skips the rest.
-          </p>
-          <p>
-            <strong>Combining Conditions with and/or</strong>
-          </p>
-          <p>
-            Use `and` and `or` to combine conditions:
-          </p>
-          <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 5px; margin: 15px 0; font-family: 'JetBrains Mono', monospace; overflow-x: auto;">
-            age = 25<br>
-            has_license = True<br>
-            <br>
-            if age >= 18 and has_license:<br>
-                print("You can drive")<br>
-            else:<br>
-                print("You cannot drive")
-          </div>
-          <p>
-            The `and` operator means both conditions must be true. The `or` operator means at least one condition must be true. The `not` operator reverses a boolean: not True becomes False.
-          </p>
         </section>
 
         <section id="loops">
           <h2>Loops: Repeating Code</h2>
           <p>
-            Loops let you repeat code multiple times without writing it over and over. This is one of programming's most powerful features. Instead of copying code 100 times, write it once in a loop. Loops are the key to writing efficient, professional code.
-          </p>
-          <p>
-            <strong>The for Loop</strong>
-          </p>
-          <p>
-            Use a for loop when you know how many times you want to repeat something:
+            Loops let you repeat code multiple times without writing it over and over. Use a for loop when you know how many times you want to repeat something.
           </p>
           <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 5px; margin: 15px 0; font-family: 'JetBrains Mono', monospace; overflow-x: auto;">
             for i in range(5):<br>
                 print("Number: " + str(i))
           </div>
-          <p>
-            This prints "Number: 0" through "Number: 4". The `range(5)` creates numbers from 0 to 4. Notice that range doesn't include 5—it stops one before. This is intentional and aligns with how Python counts many things.
-          </p>
-          <p>
-            You can customize the range:
-          </p>
-          <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 5px; margin: 15px 0; font-family: 'JetBrains Mono', monospace; overflow-x: auto;">
-            for i in range(1, 6):<br>
-                print("Counting: " + str(i))
-          </div>
-          <p>
-            This prints 1 through 5. The first number is the start, the second is where to stop (exclusive). You can also specify a step:
-          </p>
-          <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 5px; margin: 15px 0; font-family: 'JetBrains Mono', monospace; overflow-x: auto;">
-            for i in range(0, 10, 2):<br>
-                print(i)  # Prints: 0, 2, 4, 6, 8
-          </div>
-          <p>
-            <strong>The while Loop</strong>
-          </p>
-          <p>
-            Use while when you want to repeat until a condition becomes false:
-          </p>
-          <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 5px; margin: 15px 0; font-family: 'JetBrains Mono', monospace; overflow-x: auto;">
-            count = 0<br>
-            while count < 5:<br>
-                print("Count: " + str(count))<br>
-                count = count + 1
-          </div>
-          <p>
-            This starts at 0 and counts up. Each iteration, we add 1 to count. When count reaches 5, the condition `count < 5` becomes false, and the loop stops. While loops are more flexible than for loops because you can change the condition dynamically.
-          </p>
-          <p>
-            <strong>Be Careful: Infinite Loops</strong>
-          </p>
-          <p>
-            A common beginner mistake is creating an infinite loop:
-          </p>
-          <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 5px; margin: 15px 0; font-family: 'JetBrains Mono', monospace; overflow-x: auto;">
-            while True:<br>
-                print("This never stops!")
-          </div>
-          <p>
-            This loop runs forever because the condition is always true. In this case, you need to break out using Ctrl+C.
-          </p>
         </section>
 
         <section id="functions">
           <h2>Functions: Reusable Code</h2>
           <p>
-            Functions let you package code into reusable blocks. Instead of writing the same code over and over, you define it once and call it as many times as you need. This is the foundation of professional programming. Good functions make code cleaner, easier to maintain, and more efficient.
-          </p>
-          <p>
-            <strong>Defining a Function</strong>
-          </p>
-          <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 5px; margin: 15px 0; font-family: 'JetBrains Mono', monospace; overflow-x: auto;">
-            def greet():<br>
-                print("Hello, welcome!")<br>
-            <br>
-            greet()
-          </div>
-          <p>
-            We use `def` to define a function. The name is `greet`. The empty parentheses mean it takes no inputs. The colon and indentation show what code belongs to the function. When we call `greet()`, it runs the code inside.
-          </p>
-          <p>
-            <strong>Functions with Parameters</strong>
+            Functions let you package code into reusable blocks. Instead of writing the same code over and over, you define it once and call it as many times as you need.
           </p>
           <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 5px; margin: 15px 0; font-family: 'JetBrains Mono', monospace; overflow-x: auto;">
             def greet(name):<br>
                 print("Hello, " + name + "!")<br>
             <br>
-            greet("Alice")<br>
-            greet("Bob")
-          </div>
-          <p>
-            Now our function accepts a parameter (input). We pass different names each time we call it. This makes functions flexible and powerful. Parameters act like variables inside the function that receive values when the function is called.
-          </p>
-          <p>
-            <strong>Functions with Return Values</strong>
-          </p>
-          <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 5px; margin: 15px 0; font-family: 'JetBrains Mono', monospace; overflow-x: auto;">
-            def add(a, b):<br>
-                return a + b<br>
-            <br>
-            result = add(5, 3)<br>
-            print(result)  # 8
-          </div>
-          <p>
-            Functions can return a value using `return`. Now we can capture the result in a variable and use it elsewhere in our program. Return values are crucial for writing functions that do work and give you back the results.
-          </p>
-          <p>
-            <strong>Why Functions Matter</strong>
-          </p>
-          <ul>
-            <li><strong>Don't Repeat Yourself (DRY):</strong> Write code once, use it everywhere. Reduces errors and makes changes easier.</li>
-            <li><strong>Readability:</strong> A well-named function documents what code does. `send_email()` is clearer than 20 lines of email code.</li>
-            <li><strong>Maintainability:</strong> Fix a bug in one place, and it's fixed everywhere. No more hunting through duplicate code.</li>
-            <li><strong>Testing:</strong> It's easier to test isolated pieces of code. You can verify each function works correctly.</li>
-            <li><strong>Organization:</strong> Functions organize large programs into manageable pieces. Complex projects are built from simple functions.</li>
-          </ul>
-          <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 5px; margin: 15px 0; font-family: 'JetBrains Mono', monospace; overflow-x: auto;">
-            def calculate_total_price(item_price, quantity, tax_rate):<br>
-                subtotal = item_price * quantity<br>
-                tax = subtotal * tax_rate<br>
-                total = subtotal + tax<br>
-                return total<br>
-            <br>
-            price = calculate_total_price(10, 5, 0.08)<br>
-            print(price)  # 54.0
+            greet("Alice")
           </div>
         </section>
 
         <section id="practice-tips">
           <h2>Practice Tips for Python Beginners</h2>
           <p>
-            <strong>1. Start Small and Simple</strong>
+            <strong>1. Start Small and Simple:</strong> Don't try to build a complete application on day one. Master fundamentals first.
           </p>
           <p>
-            Don't try to build a complete application on day one. Write tiny programs—calculate something, prompt for user input, loop through numbers. Master fundamentals first. Success builds confidence, and confidence builds momentum.
+            <strong>2. Break Problems Down Into Steps:</strong> Divide big problems into smaller steps and code each step.
           </p>
           <p>
-            <strong>2. Break Problems Down Into Steps</strong>
+            <strong>3. Use Descriptive Variable Names:</strong> Write `student_age` instead of `a` for clarity and documentation.
           </p>
           <p>
-            When faced with a big problem, divide it into smaller steps. Write code for each step. This makes huge challenges manageable. If you need to build a calculator, start with just addition. Then subtraction. Then multiplication. Build incrementally.
+            <strong>4. Add Comments to Your Code:</strong> Explain what and why your code does things.
           </p>
           <p>
-            <strong>3. Use Descriptive Variable Names</strong>
+            <strong>5. Test Your Code Frequently:</strong> Run your code often with different inputs to find bugs early.
           </p>
           <p>
-            Future you will be grateful. Write `student_age` instead of `a`. Your code becomes your best documentation. Teams appreciate this too—they spend less time figuring out what your code does. Good names are a gift to anyone reading your code.
+            <strong>6. Learn from Error Messages:</strong> Read error messages carefully—they're your teachers.
           </p>
           <p>
-            <strong>4. Add Comments to Your Code</strong>
-          </p>
-          <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 5px; margin: 15px 0; font-family: 'JetBrains Mono', monospace; overflow-x: auto;">
-            # This calculates the average of three numbers<br>
-            average = (x + y + z) / 3
-          </div>
-          <p>
-            Comments start with # and explain what your code does. They're for humans, not the computer. Good comments explain WHY code does something, not just WHAT it does.
+            <strong>7. Practice Regularly:</strong> 15 minutes every day beats 3 hours once a week.
           </p>
           <p>
-            <strong>5. Test Your Code Frequently</strong>
+            <strong>8. Build Projects:</strong> Apply your skills by building calculators, to-do lists, or guessing games.
           </p>
           <p>
-            Run your code often. Test with different inputs. Try to break it. The sooner you find bugs, the easier they are to fix. Testing teaches you how code behaves.
+            <strong>9. Join Communities:</strong> Connect with other learners on Reddit, Discord, or Facebook groups.
           </p>
           <p>
-            <strong>6. Learn from Error Messages</strong>
-          </p>
-          <p>
-            Error messages tell you what's wrong. Read them carefully. They're your teachers. Most errors are simple typos or logic mistakes. Errors aren't failures—they're feedback.
-          </p>
-          <p>
-            <strong>7. Practice Regularly, Not Heavily</strong>
-          </p>
-          <p>
-            15 minutes every day beats 3 hours once a week. Programming is a skill like music or sports—you improve through consistent practice. Build habits, not hero mode.
-          </p>
-          <p>
-            <strong>8. Build Projects</strong>
-          </p>
-          <p>
-            The best way to learn is by building things. Start with a simple program and expand it. Maybe build a calculator, a to-do list, a dice roller, or a simple guessing game. Projects teach you more than tutorials ever can.
-          </p>
-          <p>
-            <strong>9. Join Communities</strong>
-          </p>
-          <p>
-            Beginners Facebook groups, Reddit's r/learnprogramming, or Discord servers are full of people at your level. They understand your struggles and love helping. Don't struggle alone—ask questions and help others too.
-          </p>
-          <p>
-            <strong>10. Don't Compare Your Beginning to Someone Else's Middle</strong>
-          </p>
-          <p>
-            Everyone starts at zero. The expert Python developer you admire was once confused about what a variable is. Your progress is your own. Celebrate small wins. Learning to code is a marathon, not a sprint.
-          </p>
-        </section>
-
-        <section id="next-steps">
-          <h2>Next Steps in Your Python Journey</h2>
-          <p>
-            Now that you understand the fundamentals, explore these topics:
-          </p>
-          <ul>
-            <li><strong>Lists and Tuples:</strong> Store multiple values and organize data. Lists are incredibly useful.</li>
-            <li><strong>Dictionaries:</strong> Store key-value pairs like a real dictionary (word: definition).</li>
-            <li><strong>String Methods:</strong> Manipulate text in powerful ways (.upper(), .lower(), .split()).</li>
-            <li><strong>Modules and Libraries:</strong> Use pre-built code to accomplish complex tasks.</li>
-            <li><strong>File Handling:</strong> Read from and write to files on your computer.</li>
-            <li><strong>Object-Oriented Programming:</strong> Organize code with classes and objects.</li>
-            <li><strong>Web Development:</strong> Build web applications with Django or Flask.</li>
-            <li><strong>Data Science:</strong> Analyze data with pandas and NumPy.</li>
-          </ul>
-          <p>
-            Each builds on what you've learned here. Take it one step at a time. You're on an exciting journey into programming!
+            <strong>10. Don't Compare Your Beginning:</strong> Every expert started at zero. Celebrate your progress!
           </p>
         </section>
 
         <div style="background-color: rgba(255, 255, 255, 0.05); padding: 30px; border-radius: 8px; margin: 40px 0; text-align: center;">
           <h3>Ready to Practice?</h3>
           <p>Try the examples in YBY Compiler right now. Write code, see it run instantly, and learn by doing.</p>
-          <a href="/#editor" class="button button-primary" style="display: inline-block; margin-top: 15px;">Open Compiler →</a>
+          <a href="/" class="button button-primary" style="display: inline-block; margin-top: 15px;">Open Compiler →</a>
         </div>
       </article>
 
